@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="plugin" group="vmpayment">
+	<name>Paygine</name>
+	<creationDate>October 10 2016</creationDate>
+	<author>Dennis V. Prochko</author>
+	<authorEmail>wolfsoft@mail.ru</authorEmail>
+	<authorUrl>http://www.paygine.net</authorUrl>
+	<copyright>Copyright (c) 2016 Paygine. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description><![CDATA[<a href="http://www.paygine.net" target="_blank">Paygine</a> is a popular payment provider available in Russian Federation. ]]></description>
+
+	<files>
+		<filename plugin="paygine">paygine.php</filename>
+		<filename>paygine.png</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_vmpayment_paygine.ini</language>
+		<language tag="ru-RU">ru-RU.plg_vmpayment_paygine.ini</language>
+	</languages>
+
+    <vmconfig>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_virtuemart/fields">
+				<field name="payment_logos" type="imagelist" label="VMPAYMENT_STANDARD_LOGOS"
+					description="VMPAYMENT_STANDARD_LOGOS_DESC"
+					directory="/plugins/vmpayment/paygine"
+					default="" hide_default="1" hide_none="0"
+					stripext="0" exclude=".*\.(php|html|xml|wsdl)" />
+
+	            <field name="sector_id" type="text" required="true" default="" label="VMPAYMENT_PAYGINE_SECTOR_ID"
+	                   description="VMPAYMENT_PAYGINE_SECTOR_ID_DESC"/>
+
+	            <field name="password" type="text" required="true" default="" label="VMPAYMENT_PAYGINE_PASSWORD"
+	                   description="VMPAYMENT_PAYGINE_PASSWORD_DESC"/>
+
+				<field name="test_mode" type="radio" required="true" default="1" label="VMPAYMENT_PAYGINE_TEST_MODE"
+					   description="VMPAYMENT_PAYGINE_TEST_MODE_DESC">
+					<option value="0">COM_VIRTUEMART_NO</option>
+					<option value="1">COM_VIRTUEMART_YES</option>
+				</field>
+
+				<field name="payment_currency" type="vmacceptedcurrency" scope="com_virtuemart" default="" label="VMPAYMENT_STANDARD_CURRENCY" description="VMPAYMENT_STANDARD_CURRENCY_DESC"/>
+
+				<field name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="VMPAYMENT_STANDARD_STATUS_PENDING" description="VMPAYMENT_STANDARD_STATUS_PENDING_EXPLAIN"/>
+            </fieldset>
+        </fields>
+    </vmconfig>
+
+</extension>
