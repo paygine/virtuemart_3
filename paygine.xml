@@ -4,11 +4,11 @@
 	<creationDate>October 10 2016</creationDate>
 	<author>Dennis V. Prochko</author>
 	<authorEmail>wolfsoft@mail.ru</authorEmail>
-	<authorUrl>http://www.paygine.net</authorUrl>
+	<authorUrl>http://www.paygine.ru</authorUrl>
 	<copyright>Copyright (c) 2016 Paygine. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<version>1.1.0</version>
-	<description><![CDATA[<a href="http://www.paygine.net" target="_blank">Paygine</a> is a popular payment provider available in Russian Federation. ]]></description>
+	<description><![CDATA[<a href="http://www.paygine.ru" target="_blank">Paygine</a> is a popular payment provider available in Russian Federation. ]]></description>
 
 	<files>
 		<filename plugin="paygine">paygine.php</filename>

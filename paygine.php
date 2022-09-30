@@ -9,8 +9,7 @@
 *
 * Paygine payment plugin for VirtueMart 3
 *
-* http://www.paygine.net
-*
+* http://www.paygine.ru*
 */
 
 defined('_JEXEC') or die('Restricted access');
